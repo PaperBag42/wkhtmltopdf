@@ -22,6 +22,7 @@
 #define __IMAGESETTINGS_HH__
 
 #include <QString>
+#include <limits>
 #include <wkhtmltox/loadsettings.hh>
 #include <wkhtmltox/websettings.hh>
 
@@ -40,6 +41,8 @@ struct DLL_PUBLIC CropSettings {
 	int width;
 	//! Cropping height/h dime
 	int height;
+	
+	static const int DEFAULT;
 };
 
 /*! \brief Class holding all user settings.
