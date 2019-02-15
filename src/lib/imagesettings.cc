@@ -47,6 +47,7 @@ struct DLL_LOCAL ReflectImpl<ImageGlobal>: public ReflectClass {
 		WKHTMLTOPDF_REFLECT(in);
 		WKHTMLTOPDF_REFLECT(out);
 		WKHTMLTOPDF_REFLECT(fmt);
+		WKHTMLTOPDF_REFLECT(selector);
 		WKHTMLTOPDF_REFLECT(quality);
 		WKHTMLTOPDF_REFLECT(loadGlobal);
 		WKHTMLTOPDF_REFLECT(loadPage);
@@ -68,6 +69,7 @@ ImageGlobal::ImageGlobal():
 	in(""),
 	out(""),
 	fmt(""),
+	selector(""),
 	screenWidth(1024),
 	screenHeight(0),
 	quality(94),
